@@ -1,0 +1,58 @@
+--- compilation : commands typed on terminal assuming within src/ directory
+make clean
+make
+
+--- commands :
+../bin/ush
+cd ../Link to folderA
+cd -P .
+
+echo -n LOL\n
+echo -ne LOL\n
+
+history
+history -d 3
+history
+history -c
+history
+
+cd ../../Link to folderA
+pwd
+pwd -P
+
+exit
+../bin/ush
+exit -s
+../bin/ush
+
+cd ~/../
+ls -aQ1
+ls -aQ test
+
+cat test/file1.txt
+cat -n test/file1.txt test/file2.txt
+cat -b test/file2.txt
+
+date
+date -R
+date -r test/file1.txt -R
+
+cd test
+ls -a
+rm -i .sampleTextDoc
+rm -i folderA
+rm -d folderA
+rm folderA/emptyFile.txt
+rm -d folderA
+
+ls
+mkdir newDir
+ls
+mkdir newDir/testdir wow/parent dir2
+ls
+ls newDir
+mkdir -m 722 -p wow/parent
+ls
+ls wow
+exit
+ll ../test/ | grep wow
